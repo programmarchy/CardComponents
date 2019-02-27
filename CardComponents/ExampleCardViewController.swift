@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ExampleCardViewController.swift
 //  CardComponents
 //
 //  Created by Donald Ness on 2/21/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ExampleCardViewController: UIViewController {
 
     @IBOutlet var cardView1: CardView!
     @IBOutlet var cardView1Label: UILabel!

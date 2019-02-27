@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		409481AE2226F4890072AF23 /* ExampleCompositeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409481AD2226F4890072AF23 /* ExampleCompositeCardViewController.swift */; };
+		40AE66EE221FD8B00042FF74 /* ExampleCardImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE66ED221FD8B00042FF74 /* ExampleCardImageViewController.swift */; };
 		40C2D651221F52DC00455B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D650221F52DC00455B31 /* AppDelegate.swift */; };
-		40C2D653221F52DC00455B31 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D652221F52DC00455B31 /* FirstViewController.swift */; };
-		40C2D655221F52DC00455B31 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D654221F52DC00455B31 /* SecondViewController.swift */; };
+		40C2D653221F52DC00455B31 /* ExampleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D652221F52DC00455B31 /* ExampleCardViewController.swift */; };
+		40C2D655221F52DC00455B31 /* ExampleCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D654221F52DC00455B31 /* ExampleCardTableViewController.swift */; };
 		40C2D658221F52DC00455B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C2D656221F52DC00455B31 /* Main.storyboard */; };
 		40C2D65A221F52DE00455B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C2D659221F52DE00455B31 /* Assets.xcassets */; };
 		40C2D65D221F52DE00455B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C2D65B221F52DE00455B31 /* LaunchScreen.storyboard */; };
 		40C2D665221F530200455B31 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D664221F530200455B31 /* CardView.swift */; };
+		40C2D66A221FB61D00455B31 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D669221FB61D00455B31 /* CardTableViewController.swift */; };
+		40C2D66E221FB68600455B31 /* PartialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D66D221FB68600455B31 /* PartialCardView.swift */; };
+		40C2D670221FBB3600455B31 /* ExamplePartialCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D66F221FBB3600455B31 /* ExamplePartialCardViewController.swift */; };
+		40C2D672221FD23900455B31 /* PartialCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2D671221FD23900455B31 /* PartialCardImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		409481AD2226F4890072AF23 /* ExampleCompositeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCompositeCardViewController.swift; sourceTree = "<group>"; };
+		40AE66ED221FD8B00042FF74 /* ExampleCardImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCardImageViewController.swift; sourceTree = "<group>"; };
 		40C2D64D221F52DC00455B31 /* CardComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C2D650221F52DC00455B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40C2D652221F52DC00455B31 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		40C2D654221F52DC00455B31 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		40C2D652221F52DC00455B31 /* ExampleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCardViewController.swift; sourceTree = "<group>"; };
+		40C2D654221F52DC00455B31 /* ExampleCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCardTableViewController.swift; sourceTree = "<group>"; };
 		40C2D657221F52DC00455B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40C2D659221F52DE00455B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40C2D65C221F52DE00455B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40C2D65E221F52DE00455B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C2D664221F530200455B31 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		40C2D669221FB61D00455B31 /* CardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		40C2D66D221FB68600455B31 /* PartialCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialCardView.swift; sourceTree = "<group>"; };
+		40C2D66F221FBB3600455B31 /* ExamplePartialCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePartialCardViewController.swift; sourceTree = "<group>"; };
+		40C2D671221FD23900455B31 /* PartialCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialCardImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,14 @@
 			children = (
 				40C2D650221F52DC00455B31 /* AppDelegate.swift */,
 				40C2D664221F530200455B31 /* CardView.swift */,
-				40C2D652221F52DC00455B31 /* FirstViewController.swift */,
-				40C2D654221F52DC00455B31 /* SecondViewController.swift */,
+				40C2D66D221FB68600455B31 /* PartialCardView.swift */,
+				40C2D671221FD23900455B31 /* PartialCardImage.swift */,
+				40C2D669221FB61D00455B31 /* CardTableViewController.swift */,
+				40C2D652221F52DC00455B31 /* ExampleCardViewController.swift */,
+				409481AD2226F4890072AF23 /* ExampleCompositeCardViewController.swift */,
+				40C2D66F221FBB3600455B31 /* ExamplePartialCardViewController.swift */,
+				40AE66ED221FD8B00042FF74 /* ExampleCardImageViewController.swift */,
+				40C2D654221F52DC00455B31 /* ExampleCardTableViewController.swift */,
 				40C2D656221F52DC00455B31 /* Main.storyboard */,
 				40C2D659221F52DE00455B31 /* Assets.xcassets */,
 				40C2D65B221F52DE00455B31 /* LaunchScreen.storyboard */,
@@ -141,10 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C2D655221F52DC00455B31 /* SecondViewController.swift in Sources */,
+				40C2D655221F52DC00455B31 /* ExampleCardTableViewController.swift in Sources */,
+				409481AE2226F4890072AF23 /* ExampleCompositeCardViewController.swift in Sources */,
 				40C2D651221F52DC00455B31 /* AppDelegate.swift in Sources */,
+				40C2D670221FBB3600455B31 /* ExamplePartialCardViewController.swift in Sources */,
+				40AE66EE221FD8B00042FF74 /* ExampleCardImageViewController.swift in Sources */,
+				40C2D672221FD23900455B31 /* PartialCardImage.swift in Sources */,
 				40C2D665221F530200455B31 /* CardView.swift in Sources */,
-				40C2D653221F52DC00455B31 /* FirstViewController.swift in Sources */,
+				40C2D66E221FB68600455B31 /* PartialCardView.swift in Sources */,
+				40C2D66A221FB61D00455B31 /* CardTableViewController.swift in Sources */,
+				40C2D653221F52DC00455B31 /* ExampleCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

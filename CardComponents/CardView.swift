@@ -11,15 +11,21 @@ import UIKit
 @IBDesignable
 class CardView: UIView {
     
-    private var shadowLayer: CAShapeLayer?
+    internal let shadowLayer = CAShapeLayer()
     
-    @IBInspectable var cornerRadius: CGFloat = 2.0 {
-        didSet {
-            setNeedsLayout()
-        }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addShadowLayer()
     }
     
-    @IBInspectable var shadowFillColor: UIColor = .blue {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        addShadowLayer()
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             setNeedsLayout()
         }
@@ -31,57 +37,66 @@ class CardView: UIView {
         }
     }
     
-    @IBInspectable var shadowOffset: CGSize = CGSize(width: 0, height: 2) {
+    @IBInspectable var shadowOffset: CGSize = CGSize(width: 0, height: 0) {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowOpacity: CGFloat = 0.65 {
+    @IBInspectable var shadowOpacity: CGFloat = 0.0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowRadius: CGFloat = 2.0 {
+    @IBInspectable var shadowRadius: CGFloat = 0.0 {
         didSet {
             setNeedsLayout()
         }
+    }
+    
+    private func addShadowLayer() {
+        shadowLayer.frame = bounds
+        
+        layer.insertSublayer(shadowLayer, at: 0)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        addShadowLayerIfNeeded()
-        
         layoutShadowLayer()
-    }
-    
-    private func addShadowLayerIfNeeded() {
-        guard self.shadowLayer == nil else {
-            return
-        }
-        
-        let shadowLayer = CAShapeLayer()
-        layer.insertSublayer(shadowLayer, at: 0)
-        
-        self.shadowLayer = shadowLayer
+        layoutCorners()
     }
     
     private func layoutShadowLayer() {
-        guard let shadowLayer = shadowLayer else {
-            return
-        }
+        shadowLayer.frame = bounds
         
-        let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
-        shadowLayer.path = shadowPath.cgPath
-        shadowLayer.shadowPath = shadowPath.cgPath
         shadowLayer.shadowColor = shadowColor.cgColor
         shadowLayer.shadowOffset = shadowOffset
         shadowLayer.shadowOpacity = Float(shadowOpacity)
         shadowLayer.shadowRadius = shadowRadius
         
         shadowLayer.fillColor = backgroundColor?.cgColor
+    }
+    
+    internal var cornerMask: CACornerMask {
+        return [ .layerMinXMinYCorner,
+                 .layerMinXMaxYCorner,
+                 .layerMaxXMinYCorner,
+                 .layerMaxXMaxYCorner ]
+    }
+    
+    internal var cornerPath: UIBezierPath {
+        return UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
+    }
+    
+    internal func layoutCorners() {
+        layer.cornerRadius = cornerRadius
+        layer.maskedCorners = cornerMask
+
+        let cornerPath = self.cornerPath
+        shadowLayer.path = cornerPath.cgPath
+        shadowLayer.shadowPath = cornerPath.cgPath
     }
     
 }
